@@ -1,5 +1,4 @@
 function threeSum(arr, target) {
-  function threeSum(arr, target) {
   // write your code here
   arr = arr.sort((a,b)=>{return a-b;});
   let closest = 99999999999;
@@ -17,9 +16,8 @@ function threeSum(arr, target) {
     }else{
       prt2++;
     }
-  }
-  return closest;
-  }
+}
+return closest;
 
   // let arr = [2,4,5,8,7,6,3];
   // let result = threeSum(arr, 9);
