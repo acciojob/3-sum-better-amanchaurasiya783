@@ -25,4 +25,4 @@ function threeSum(arr, target) {
   // let result = threeSum(arr, 9);
   // console.log(result);
 
-// module.exports = threeSum;
+module.exports = threeSum;
