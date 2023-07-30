@@ -7,7 +7,15 @@ for(let i=0; i<arr.length; i++){
     let prt3 = arr.length-1;
     while(prt2<prt3){
         let sum = arr[i] + arr[prt2] + arr[prt3];
-    if((target - sum) > (target - closest)){
+        let compareSum = target - sum;
+        let compareClosest = target - closest;
+        if(compareSum<0){
+            compareSum = -(compareSum);
+        }
+        if(compareClosest<0){
+            compareClosest = -(compareClosest);
+        }
+    if((compareSum) < (compareClosest)){
         closest = sum;
     }
     if(sum>target){
